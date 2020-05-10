@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<h1>ТЕМА: ОБРАБОТКА СОБЫТИЙ</h1>
+	<div id="out">
+		<div class="random" id="randomNumber">
+			<div>Random number :</div>
+			<div id="out-number"></div>
+			<input type="button" value="Generate random number" id="randomMore">
+		</div>
+		<div class="mouse-coordinates" id="coordinates">
+			X = <span id="xCoordinatesMouse"></span> , Y = <span id="yCoordinatesMouse"></span>
+			<div class="mouse" id="mouse"></div>
+		</div>
+		<div class="hide-show" id="hideShow">
+			<input type="button" value="Hide / show text" id="hideShowButton">
+			<div id="textHideShow" class="textHideShow">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Exercitationem eaque nulla
+				dolore blanditiis,
+				mollitia temporibus laudantium aut ipsa animi voluptates rerum esse laboriosam rem excepturi beatae facilis
+				itaque porro labore.</div>
+		</div>
+		<div class="news" id="news">
+			<div class="article" name="news" id="news1">
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor minima rerum doloremque
+					recusandae molestiae, assumenda cumque rem nisi atque ea eum nobis alias quo, deserunt dolorum saepe
+					delectus consequatur?</p>
+				<input type="button" name="remove-news" value="&#10006;" id="removeNews1" class="removeNews">
+			</div>
+		</div>
+		<div class="progressbar" id="progressAdd">
+			<progress value="15" max="100" id="progress"></progress>
+			<input type="button" id="progressbar" value="add">
+		</div>
+		<div class="wrapper-tabs" id="wrapperTabs">
+			<div class="tab">
+				<button class="tablinks" value="London">London</button>
+				<button class="tablinks" value="Paris">Paris</button>
+				<button class="tablinks" value="Tokyo">Tokyo</button>
+			</div>
+			<div id="London" class="tabcontent">
+				<h3>London</h3>
+				<p>London is the capital city of England.</p>
+			</div>
+
+			<div id="Paris" class="tabcontent">
+				<h3>Paris</h3>
+				<p>Paris is the capital of France.</p>
+			</div>
+
+			<div id="Tokyo" class="tabcontent">
+				<h3>Tokyo</h3>
+				<p>Tokyo is the capital of Japan.</p>
+			</div>
+		</div>
+	</div>
+
+	<ul>
+		<li>Создать html-страницу для генерации случайных чисел. На
+			странице должна быть кнопка, при нажатии на которую случайное
+			целое число от 0 до 100 выводится в div.
+			<input type="button" value="try it" name="tasks" id="first">
+		</li>
+		<li>Создать html-страницу с div, который занимает всю ширину
+			и высоту экрана. При движении мышкой внутри этого div, выво-
+			дить текущие координаты мышки. При клике кнопкой мыши туда
+			же, выводить, какой именно кнопкой был совершен клик (правой
+			или левой).
+			<input type="button" value="try it" name="tasks" id="second">
+		</li>
+		<li>Создать html-страницу, на которой будет кнопка и текст. При
+			нажатии на кнопку, текст должен скрываться. При повторном на-
+			жатии – текст должен снова отображаться.
+			<input type="button" value="try it" name="tasks" id="third">
+		</li>
+		<li>Создать html-страницу со вкладками. С левой стороны страни-
+			цы отображается несколько вкладок, по которым можно переклю-
+			чаться. У каждой вкладки есть свое содержимое, но в один момент
+			времени отображается содержимое только активной вкладки.
+			<input type="button" value="try it" name="tasks" id="fourth">
+		</li>
+		<li>Создать html-страницу со списком новостей. Возле каждой
+			новости должна быть кнопка Удалить, при нажатии на которую
+			соответствующая новость исчезает.
+			<input type="button" value="try it" name="tasks" id="fifth">
+		</li>
+		<li>Создать html-страницу с progressbar и кнопкой, при нажатии
+			на которую заполненность progressbar увеличивается на 5%.
+			<input type="button" value="try it" name="tasks" id="sixth">
+		</li>
+	</ul>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
