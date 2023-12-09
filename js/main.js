@@ -1,4 +1,4 @@
-// don`t hide ( display : block ) elements on the right side of the screen
+//не скрывайте (display:block) элементы в правой части экрана
 function print(argument) {
 	let out = document.getElementById(argument);
 	out.classList.toggle("displayBlock");
@@ -7,7 +7,7 @@ function printNone(argument) {
 	let out = document.getElementById(argument);
 	out.classList.toggle("displayNone");
 }
-// track click events button of tasks
+// отслеживать события нажатия кнопки задач
 let buttons = document.getElementsByName("tasks");
 for (var i = 0; i < buttons.length; i += 1) {
 	buttons[0].addEventListener('click', functionCombinationRandomNumber);
@@ -74,19 +74,19 @@ for (var i = 0; i < tabsButtons.length; i += 1) {
 	});
 }
 function openCity(evt, cityName) {
-	// Declare all variables
+	// Объявите все переменные
 	var i, tabcontent, tablinks;
-	// Get all elements with class="tabcontent" and hide them
+	// Получите все элементы с помощью class="tabcontent" и скройте их.
 	tabcontent = document.getElementsByClassName("tabcontent");
 	for (i = 0; i < tabcontent.length; i++) {
 		tabcontent[i].style.display = "none";
 	}
-	// Get all elements with class="tablinks" and remove the class "active"
+	// Получите все элементы с class="tablinks" и удалите класс "active".
 	tablinks = document.getElementsByClassName("tablinks");
 	for (i = 0; i < tablinks.length; i++) {
 		tablinks[i].className = tablinks[i].className.replace(" active", "");
 	}
-	// Show the current tab, and add an "active" class to the button that opened the tab
+	//Показать текущую вкладку и добавить «активный» класс к кнопке, открывающей вкладку.
 	let noop = document.getElementById(cityName).style.display = 'block';
 	evt.currentTarget.className += " active";
 }
